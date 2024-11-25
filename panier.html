@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panier</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/panier.css">
 </head>
 <body>
     <div class="container">
-        <h1>Votre Panier</h1>
-        <div id="cart-items">
-            <!-- Cart items dynamically added -->
+        <nav class="top-nav">
+            <div class="logo">Terres de Café</div>
+            <a href="shop.html" class="back-to-shop">← Retour à la boutique</a>
+        </nav>
+        
+        <div class="cart-content">
+            <h2>Votre Panier</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Produit</th>
+                        <th>Quantité</th>
+                        <th>Prix Unitaire</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Items will be dynamically loaded -->
+                </tbody>
+            </table>
+            
+            <div class="cart-summary">
+                <h3>Total: <span id="cart-total">0</span> dh</h3>
+            </div>
         </div>
     </div>
-    <script src="panier.js"></script>
+    <script src="./js/panier.js"></script>
 </body>
 </html>
